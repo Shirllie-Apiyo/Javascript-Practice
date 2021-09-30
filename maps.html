@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<body>
+    <p>Creating a map from an array</p>
+    <p id="Practice"></p>
+    <p id="demo"></p>
+    <script>
+        const fruits =new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        // document.getElementById("demo").innerHTML =fruits.get("apples");
+        // fruits.set("bananas", 100);
+        // document.getElementById("practice").innerHTML = fruits.get("bananas");
+
+        
+        // fruits.delete("apples");
+        // document.getElementById("demo").innerHTML= fruits.size;
+        fruits.clear("apples");
+        document.getElementById("demo").innerHTML= fruits.size;
+
+        
+
+    </script>
+</body>
+</html>

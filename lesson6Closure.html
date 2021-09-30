@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //we need nested functions
+        function init(){
+            let name ="Modcom";
+            // document.write("My age is"+ age);
+            function displayName(){
+                let age = 10;
+                document.write("My name is "+name);
+                (function(){
+                    document.write("My age is"+ age);
+
+                }) ();
+
+            }//end inner
+            displayName();
+            
+
+        }//end outer
+        init();
+
+        //above we see that inner function have aceess to outer function local variables
+        // the outer functions cannot access the inner functions variables
+    </script>
+</body>
+</html>

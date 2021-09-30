@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2a</title>
+</head>
+<body>
+    <script>
+        let number =45.555555;
+        let number2 = 89;
+        document.write(number.toFixed(2));
+        document.write("</br>");
+        document.write(number.toExponential(3));
+        document.write("</br>");
+
+        document.write(number.toPrecision(5)); // this is the length 
+        document.write("</br>");
+        document.write(parseInt(number));
+        document.write("</br>");
+        document.write(parseFloat(number2));
+        document.write("</br>");
+
+        // let answer = number + number2;
+        // document.write(answer);
+
+        let answer = number.toString() + number2.toString();
+        document.write(answer);
+
+
+
+
+    </script>
+</body>
+</html>

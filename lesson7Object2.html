@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects with Functions</title>
+</head>
+<body>
+    <script>
+        let person = {
+                    firstName: "Allan",
+                    lastName : "Johnson",
+                    age: 50,
+                    eyeColor: "blue",
+                    fullName: function(){
+                        // return person.firstName+""+person.lastName
+                        return person.firstName+""+this.lastName;
+                    }//end fullname
+                    ,
+                    year_of_retirement: function(){
+                        return 60 - this.age;
+
+                    }//end years of retirement
+
+                    }//end object
+
+                    //above we add a function an anonymous function as a property
+                    //NB:fullName is a function.
+                    document.write(person.fullName());
+                    document.write("<br/>");
+                    document.write(person.year_of_retirement());
+    </script>
+</body>
+</html>

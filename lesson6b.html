@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // variable scope
+        // scope represent the boundaries of a variable.
+        let y =50; // this a global variable
+        // global variables can be accesed by any function
+        function first(){
+            let x =45; // this is called a local variable it can only be used here
+
+        }//end
+        function second (){
+            let x = 10;
+            let y = 78;
+            document.write("Accesible X" +x);
+            document.write("Accesible Y" +y);
+
+        }//end
+        //call
+        second();
+    </script>
+</body>
+</html>

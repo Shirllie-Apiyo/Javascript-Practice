@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        let bmi =5;
+        switch(true) {
+            case (bmi <17.5):
+                document.write("You are underweight </br>");
+                if (bmi <10){
+                    document.write("Critical");
+                }
+                break;
+
+                case (bmi >= 17.5 && bmi <22.5):
+                    document.write("Your BMI is normal");
+                    break;
+                        case (bmi >22.5 && bmi < 30):
+                        document.write("Its over weight")
+                        break;
+                        default:
+                            document.write("Obese")
+
+        }//end switch
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let operator =prompt("Enter either +, -,/, *");
+        let number1 =prompt("Your Number 1");
+        let number2 =prompt("Your number 2");
+
+
+        switch(operator){
+            case '+': 
+            let sum = parseFloat(number1) + parseFloat(number2);
+            document.write("Sum is " +sum);
+            break;
+
+            case '*': 
+            let product = parseFloat(number1) * parseFloat(number2);
+            document.write("Product is" + product);
+            break;
+
+            default: 
+            document.write("Operator Not Found");
+            break;
+
+        }
+    </script>
+</body>
+</html>

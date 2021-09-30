@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getters & Setters</title>
+</head>
+<body>
+    <script>
+        let person = {
+                    firstName: "Allan",
+                    lastName : "Johnson",
+                    age: 50,
+                    eyeColor: "blue",
+                    get fullNames(){
+                        return this.lastName+""+this.firstName;
+                    }//end
+                    ,
+                    get retire (){
+                        return 60 - this.age;
+                    },
+                    set seteyeColor(value){
+                        return this.eyeColor = value;
+                    }
+                    }//end object
+                    //access the getter function
+                    document.write(person.fullNames);
+                    document.write(person.retire);
+                    //set new eye color
+
+                    document.write(person.eyeColor);
+                    person.seteyeColor ="Yellow";
+                    document.write(person.eyeColor);
+                    //add a new one
+                    person.nationality ="Kenyan";
+                    document.write(person.nationality);
+    </script>
+</body>
+</html>

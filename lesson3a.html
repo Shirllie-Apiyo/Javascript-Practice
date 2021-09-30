@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested if statements</title>
+</head>
+<body>
+    <script>
+        // nested means if inside another one
+        let age = 17;
+        let weight =45;
+        //to donate over 18 and 50kgs
+        if (age > 18 ){
+            document.write("You are eligible,but need to know your weight");
+            if (weight >50){
+                document.write("You can donate")
+            }
+            else {
+                document.write("You cant donate your weight is < 50");
+            }
+
+        }//end first if
+        else{
+            document.write("You cant donate, you are < 18");
+            if (age >15){
+                document.write("Please check your weight")
+                if(weight >50){
+                    document.write("You can donate");
+                }
+                else{
+                    document.write("You can't donate");
+                }
+            }
+            else{
+                    document.write("You cannot donate");
+                }
+        }//end else
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //objects have states and behaviours
+        let person = {
+                    firstName: "Allan",
+                    lastName : "Johnson",
+                    age: 50,
+                    eyeColor: "blue",
+                    }//end
+                    //above we use key value approach
+                    //in programming states become properties and behaviours become functions
+                    // access properties from above object
+                    //add a new property
+                    person.nationality = "Kenyan";
+                    delete person.age;
+
+
+                    document.write(person.firstName);
+                    document.write("<br/>");
+                    document.write(person["firstName"]);
+                    document.write("<br/>");
+                    for (let property in person){
+                        document.write(person[property]+"<br/>");
+                    }
+    </script>
+</body>
+</html>

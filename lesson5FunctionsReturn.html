@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameters/Return</title>
+</head>
+<body>
+
+    <button type="submit" onclick="test();">My Names</button>
+
+    <script type="text/javascript">
+        function concatenate(first, last){
+            let full = first + last
+            // document.write(full);
+            return full;
+
+        }//end
+
+        //do another function
+        function  test (){
+            //this function will call concatenate
+            //concatenate function takes 2 argumnets and returns full name as a result
+            let result = concatenate("John", "Doe");
+            document.write(result);
+
+        }//end
+        // (function () {
+        //     document.write("Run immeadiately");
+
+        // }} ();
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructors</title>
+</head>
+<body>
+    <script>
+        //previously we did one object with one person
+        //we need to create a template/blueprint object to store persons
+            function Person(first, last,age,eye){
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eye;
+            }//end
+
+            let person1 =new Person("Tom", "Johnson",50,"Blue");
+            let person2 =new Person("Irene", "Kennedy",48,"Yellow");
+            let person3 =new Person("Ann", "Stephens",30,"Orange");
+            let person4 =new Person("Joe", "Williams",40,"Red");
+
+            // access properties
+            document.write("My friend is called" + person4.firstName+""+person4.lastName+""+person4.age+""+person4.eyeColor+"<br/>");
+            document.write("My friend is called" + person3.firstName);
+            document.write("My friend is called" + person2.firstName);
+            document.write("My friend is called" + person1.firstName);
+
+
+            //TODO
+            //create an object constructor with doctor params
+            //namely: firstname,lastname, surname, yearsof experience, salary, age , speciality
+
+            //test it by creating 2 doctors
+            //======prototypes adding functions to the constructor
+            //function to increase salary according to yrs of experience
+    </script>
+    
+</body>
+</html>

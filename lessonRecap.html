@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap</title>
+</head>
+<body>
+    <script>
+        //JS boolean 
+        let x = true;
+        document.write(" It was " +x)
+
+        // set - a collection of unique elements
+        let fruits = new Set(["Orange","Apple","Mango","Mango"]);
+        console.log(fruits);
+
+        // add more items
+        fruits.add("Passion");
+        console.log(fruits);
+
+        //check if we have a watermelon in the set
+        console.log(fruits.has("Mango")); // you get a boolean
+
+        //sets delete
+        fruits.delete("Mango");
+        console.log(fruits);
+
+        // clear everything
+        fruits.clear();
+        console.log(fruits);
+
+    </script>
+</body>
+</html>

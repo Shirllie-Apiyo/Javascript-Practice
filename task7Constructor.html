@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor assignment</title>
+</head>
+<body>
+    <script>
+         //TODO
+            //create an object constructor with doctor params
+            //namely: firstname,lastname, surname, yearsof experience, salary, age , speciality
+
+            //test it by creating 2 doctors
+            //======prototypes adding functions to the constructor
+            //function to increase salary according to yrs of experience
+            function Doctor(first, last,surname,years_of_experience,salary, age, speciality){
+                this.firstName = first;
+                this.lastname = last;
+                this.surname = surname;
+                this.years_of_experience =years_of_experience;
+                this.salary = salary;
+                this.age = age;
+                this.speciality= speciality;
+                
+            }//end
+            let doctor1 =new Doctor("Jerry", "Kings","pikal", 10, 100000, 45, "denstistry");
+            let doctor2 =new Doctor("Joshua", "Matthew", "Brown", 5, 75000, 35, "cardiology");
+
+            //access properties
+            document.write("Doctor two has " + doctor2.years_of_experience+" years of experience " + "and his first name is " +doctor2.firstName+" and his area of speality is "+ doctor2.speciality);
+    </script>
+</body>
+</html>

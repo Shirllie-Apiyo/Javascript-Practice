@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+</head>
+<body>
+
+    <button type="submit" onclick="SimpleInterest(30000,5,1);">SimpleInterest</button>
+    <script>
+        function SimpleInterest(principle,rate, time){
+            let answer = (principle*rate*time)/100;
+            document.write("Your Simple Interest is:" +answer);
+
+        }
+    </script>
+</body>
+</html>

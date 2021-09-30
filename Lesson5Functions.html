@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!-- invoke or call are names used meaning trigger the function -->
+    <!-- <button type="submit" 
+    onclick="sayHelloToday('Ann',10); 
+    sayHelloToday('Tom', 23);" >Greetings</button> -->
+
+
+    <!-- when calling BMI we parse arguments -->
+    <button type="submit" onclick="bmi(75.5,1.5); bmi(75.5,1.5);">Check BMI</button>
+    
+    <script type="text/javascript">
+        function sayHelloToday(name, age){
+            document.write("Hello "+name+ "You are " +age+ "Yrs old <br/>");
+
+        }//end here
+
+        // sayHelloToday("Hassan",15);
+
+        //below function expects 2 params
+        function bmi(weight, height){
+            // let answer  =parseFloat(weight/(parseFloat(height) *parseFloat(height));
+            // document.write("Your Body Mass Index" +bmi+ "<br/>");
+            let answer = weight /(height * height);
+            document.write("Your BMI is" +answer);
+        }
+
+        
+    </script>
+
+
+</body>
+</html>
